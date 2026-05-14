@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce myself</title>
+    <mata name="description" content="my Web site to introduce myself">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Mochiy+Pop+One&family=Noto+Sans+JP:wght@100..900&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu flex">
+                <li><a href="#desc">概要</a></li>
+                <li><a href="#things">制作物</a></li>
+                <li><a href="#github">githubリンク</a></li>
+            </ul>
+        </nav>
+        <img src="mitocon.png" alt="ミトコンドリア">
+        <div class="container flex">
+            <h1 class="pop">
+                <span>木本 琢己</span>の自己紹介サイト
+            </h1>
+        </div>
+        <section>
+
+        </section>
+    </header>
+    <main>
+        <h1 id="desc">概要</h1>
+        <p>私はN高等学校に所属する2年次の木本琢己です。<br>
+        年齢は16歳でプログラミング歴は3年です。<br>
+        扱える言語はjava,c#,c++が得意でGo,pythonは基本的なことはできます。<br>
+        制作物は大きなもので1つ、小さなもので3つ程度で<br>
+        大きなものはabsorberという植物の視点になって成長させていくシミュレーションゲームです<br>
+        私の本領はゲーム制作で、Unityやライブラリを用いたc++での開発をした経験があります<br>
+        Absorberはc++でゲームライブラリを用いて開発しました。<br>
+        GDI+やDirectXを使いクリアした時の画面を印刷機で印刷できるようにしました<br>
+        現在制作しているのはUnityでプレイヤーがc++をベースとした言語を書くことでその通りにキャラクターが動く<br>
+        海賊ゲームを制作しています。私はそこからパーサやASTなどの自作言語を作る上で大変貴重な経験をしました<br>
+        現在興味があることはインターンでWeb系や組み込み,本格的なゲーム制作について学びたいと思っています<br>
+        <br>
+        </p>
+        <h1 id="things">制作物</h1>
+        <h2>ここから私の制作したゲームの紹介をします</h2>
+        <img src="title.png" alt="AbsorberTitle">
+        <p>このゲームはAbsorberといって植物の目線で水や光を吸収して<br>
+        根や茎、葉を生やし花びらを4つ集めたらクリアというゲームです。<br>
+        ここで一番工夫したのは根と水資源が繋がっているかどうかをBFS(幅優先探索)で判定することで<br>
+        BFSというアルゴリズムは知っていましたが、それを実践したのは初めてでした。</p>
+        <img src="play.png" alt="AbsorberPlay">
+        <p>スタートするとチュートリアルが出るのですがここでは省きます。<br>
+        チュートリアルをこえるとゲームスタートで右下がUIでここで根や茎、葉を選びます<br>
+        そして、中央にあるたねの上下左右からドラッグ&ドロップで右上の光ゲージと水ゲージを消費しながら生やします<br>
+        左上の四つ並んだものは花びらUIで花びらをマップの端から入手すると光って表示されます。
+        </p>
+        <h1 id="github">github</h1>
+        <p>githubリンクへは<a href="https://github.com/mitocondoria" target="_blank">ここ</a>をクリック！</p>
+    </main>
+</body>
+
+</html>
