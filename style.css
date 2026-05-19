@@ -61,10 +61,6 @@ header {
     padding: 20px;
 }
 
-body {
-    background-color: rgb(123, 104, 186);
-}
-
 main {
     margin-left: 25%;
 }
@@ -77,13 +73,25 @@ main {
 }
 
 .sky {
-    position: absolute;
-    inset: 0;
-    background-image: url(backgroundSky.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    aspect-ratio: 1670 / 554;
     z-index: -3;
+    pointer-events: none;
+
+    --light-x: 59%;
+    --light-y: 38%;
+    --light-width: 30%;
+    --light-height: 36%;
+}
+
+.lighthouse {
+    display: block;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 100vw;
+    height: auto;
 }
 
 .character {
@@ -118,13 +126,14 @@ main {
     transition: 3s;
     color: #3CD371;
 }
-/* .light {
-    position:absolute;
+.light {
+    position: absolute;
+    top: calc(var(--light-y));
+    left: calc(var(--light-x));
+    width: var(--light-width);
+    height: var(--light-height);
 
-    width: 50%;
-    height: 24%;
-
-    transform-origin: right center;
+    transform-origin: 100% 50%;
 
     background: linear-gradient(-90deg,
             rgba(255, 245, 180, 0.75),
@@ -133,9 +142,9 @@ main {
 
     clip-path: polygon(0 0, 0 100%, 100% 51%, 100% 49%);
 
-    filter: blur(50%);
+    filter: blur(clamp(8px, 1.5vw, 24px));
     mix-blend-mode: screen;
     opacity: 0.8;
 
     pointer-events: none;
-} */
+}
