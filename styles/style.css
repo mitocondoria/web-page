@@ -16,7 +16,7 @@
     width: 90%;
     max-width: 1120px;
     font-size: 40px;
-    background-image: url(headerImage.png);
+    background-image: url(../assets/headerImage.png);
     border-radius: 20px;
     border: 2px solid #000;
     justify-content: center;
@@ -97,7 +97,7 @@ main {
 .character {
     position: absolute;
     inset: 0;
-    background-image: url(backgroundChara.png);
+    background-image: url(../assets/backgroundChara.png);
     background-size: 25vw auto;
     background-position: bottom left;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ main {
 .space {
     position: absolute;
     inset: 0;
-    background-image: url(space.png);
+    background-image: url(../assets/space.png);
     background-repeat: repeat-x;
     background-position: top left;
     background-size: auto 100%;

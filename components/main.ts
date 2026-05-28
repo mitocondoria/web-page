@@ -7,7 +7,7 @@ async function failingStar() {
     for (let i: number = 0; i < 10; i++) {
         const img = document.createElement("img");
         console.log(img);
-        const starUrl = new URL("star.png", import.meta.url).href;
+        const starUrl = new URL("../assets/star.png", import.meta.url).href;
         img.src = starUrl;
         img.alt = "star";
         img.style.position = "fixed";
@@ -51,11 +51,12 @@ async function failingStar() {
 }
 failingStar();
 window.addEventListener("scroll", () => {
+    console.log("gfhs");
     let scroll = window.scrollY;
     const background: any = document.querySelector(".background");
 
     if (background != null) {
-        background.style.background.position.y = `${scroll / 2}px`;
+        background.style.background.scrollY = `${scroll / 2}px`;
     }
 });
 
